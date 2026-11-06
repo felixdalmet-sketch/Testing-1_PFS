@@ -39,10 +39,8 @@ export default async function HomePage() {
         year: "numeric",
       })
     : "Saturday, 7 November 2026";
-  const time =
-    event?.startTime && event?.endTime
-      ? `${event.startTime} – ${event.endTime}`
-      : "10:30 AM – 3:00 PM";
+  // Fixed event window for PAPER FASHION WALK 2026
+  const time = "10:30 AM – 3:00 PM";
 
   return (
     <div className="min-h-screen paper-bg">
