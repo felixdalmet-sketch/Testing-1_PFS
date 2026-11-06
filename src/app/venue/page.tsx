@@ -41,8 +41,8 @@ export default function VenuePage() {
                 ["Venue", "Classroom 3, PG Building"],
                 ["Institution", "KLE CBALC, Belagavi"],
                 ["Date", "Saturday, 7 November 2026"],
-                ["Time", "9:00 AM – 1:30 PM"],
-                ["Reporting", "Teams by 8:30 AM"],
+                ["Time", "10:30 AM – 3:00 PM"],
+                ["Reporting", "Teams by 10:30 AM"],
               ].map(([k, v]) => (
                 <div key={k} className="flex justify-between border-b border-[#e5e2d9] pb-3">
                   <span className="text-[#999] tracking-widest uppercase text-xs">{k}</span>
@@ -74,7 +74,7 @@ export default function VenuePage() {
         <div className="bg-[#1a1a1a] text-[#faf9f6] p-8 md:p-10 mb-12">
           <h2 className="font-display text-xl mb-3 text-[#c9a227]">Important for participants</h2>
           <ul className="space-y-2 text-sm text-[#ccc] font-sans-ui">
-            <li>• Teams must report by <strong className="text-white">8:30 AM</strong> for check-in and outfit readiness.</li>
+            <li>• Teams must report by <strong className="text-white">10:30 AM</strong> for check-in and outfit readiness.</li>
             <li>• Clear access to entrance and exit will be maintained at all times.</li>
             <li>• Furniture movement and décor only with faculty/venue permission.</li>
             <li>• The event will not proceed with an obstructed exit or unsafe crowding.</li>
