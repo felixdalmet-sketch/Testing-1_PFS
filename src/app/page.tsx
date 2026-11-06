@@ -42,7 +42,7 @@ export default async function HomePage() {
   const time =
     event?.startTime && event?.endTime
       ? `${event.startTime} – ${event.endTime}`
-      : "9:00 AM – 1:30 PM";
+      : "10:30 AM – 3:00 PM";
 
   return (
     <div className="min-h-screen paper-bg">
