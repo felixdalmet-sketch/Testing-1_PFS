@@ -5,20 +5,20 @@ const REGISTER_URL = "https://forms.gle/szVdWVhLMAos6Bqy7";
 const HEADER_IMG = "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=80";
 
 const schedule = [
-  { time: "8:00 – 8:30 AM", activity: "Organising team reporting, room inspection and setup", lead: "Event coordinator and operations team" },
-  { time: "8:30 – 9:00 AM", activity: "Team check-in, attendance and outfit readiness check", lead: "Registration and participant support" },
-  { time: "9:00 – 9:10 AM", activity: "Welcome and opening announcement", lead: "Host" },
-  { time: "9:10 – 9:20 AM", activity: "Event purpose, theme and rules briefing", lead: "Event coordinator" },
-  { time: "9:20 – 9:30 AM", activity: "Judges' introduction and scoring explanation", lead: "Host / judging coordinator" },
-  { time: "9:30 – 9:40 AM", activity: "Team lineup and order confirmation", lead: "Stage and participant coordinators" },
-  { time: "9:40 – 10:40 AM", activity: "Paper Fashion Walk presentations: Teams 1–4", lead: "Host and runway coordinator" },
-  { time: "10:40 – 10:50 AM", activity: "Short reset and classroom ventilation break", lead: "Operations team" },
-  { time: "10:50 – 11:50 AM", activity: "Paper Fashion Walk presentations: Teams 5–8", lead: "Host and runway coordinator" },
-  { time: "11:50 AM – 12:10 PM", activity: "Judges' review and score consolidation", lead: "Judging coordinator" },
-  { time: "12:10 – 12:25 PM", activity: "Audience interaction and participant group photographs", lead: "Host and media team" },
-  { time: "12:25 – 12:45 PM", activity: "Results, awards and recognition", lead: "Judges / faculty representative" },
-  { time: "12:45 – 12:55 PM", activity: "Vote of thanks and closing remarks", lead: "Event coordinator" },
-  { time: "12:55 – 1:30 PM", activity: "Pack-down, room restoration and final inspection", lead: "All organising teams" },
+  { time: "10:00 – 10:30 AM", activity: "Organising team reporting, room inspection and setup", lead: "Event coordinator and operations team" },
+  { time: "10:30 – 11:00 AM", activity: "Team check-in, attendance and outfit readiness check", lead: "Registration and participant support" },
+  { time: "11:00 – 11:10 AM", activity: "Welcome and opening announcement", lead: "Host" },
+  { time: "11:10 – 11:20 AM", activity: "Event purpose, theme and rules briefing", lead: "Event coordinator" },
+  { time: "11:20 – 11:30 AM", activity: "Judges' introduction and scoring explanation", lead: "Host / judging coordinator" },
+  { time: "11:30 – 11:40 AM", activity: "Team lineup and order confirmation", lead: "Stage and participant coordinators" },
+  { time: "11:40 AM – 12:40 PM", activity: "Paper Fashion Walk presentations: Teams 1–4", lead: "Host and runway coordinator" },
+  { time: "12:40 – 12:50 PM", activity: "Short reset and classroom ventilation break", lead: "Operations team" },
+  { time: "12:50 – 1:50 PM", activity: "Paper Fashion Walk presentations: Teams 5–8", lead: "Host and runway coordinator" },
+  { time: "1:50 – 2:10 PM", activity: "Judges' review and score consolidation", lead: "Judging coordinator" },
+  { time: "2:10 – 2:25 PM", activity: "Audience interaction and participant group photographs", lead: "Host and media team" },
+  { time: "2:25 – 2:45 PM", activity: "Results, awards and recognition", lead: "Judges / faculty representative" },
+  { time: "2:45 – 2:55 PM", activity: "Vote of thanks and closing remarks", lead: "Event coordinator" },
+  { time: "2:55 – 3:00 PM", activity: "Pack-down, room restoration and final inspection", lead: "All organising teams" },
 ];
 
 export default function AgendaPage() {
@@ -41,21 +41,21 @@ export default function AgendaPage() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <p className="font-sans-ui text-xs tracking-[0.3em] uppercase text-[#c9a227] mb-2">Programme</p>
           <h1 className="font-display text-3xl md:text-5xl text-white">Event Agenda</h1>
-          <p className="text-white/80 font-sans-ui text-sm mt-2">Saturday, 7 November 2026 · 9:00 AM – 1:30 PM</p>
+          <p className="text-white/80 font-sans-ui text-sm mt-2">Saturday, 7 November 2026 · 10:30 AM – 3:00 PM</p>
         </div>
       </div>
 
       <main className="max-w-4xl mx-auto px-6 py-14 md:py-16">
         <p className="text-[#555] text-sm mb-10 max-w-2xl leading-relaxed">
-          The programme finishes by 1:30 PM and includes check-in, briefing, runway presentations,
-          judging and prize distribution. Each team receives a maximum of 3 minutes.
+          The programme runs from 10:30 AM to 3:00 PM and includes check-in, briefing, runway presentations,
+          judging and prize distribution. Each team receives a maximum of 3 minutes. Teams should report by 10:30 AM.
         </p>
 
         <div className="bg-white border border-[#e5e2d9] shadow-sm">
           {schedule.map((item, i) => (
             <div
               key={i}
-              className={`grid grid-cols-1 md:grid-cols-[160px_1fr] gap-2 md:gap-6 px-5 py-4 ${
+              className={`grid grid-cols-1 md:grid-cols-[170px_1fr] gap-2 md:gap-6 px-5 py-4 ${
                 i !== schedule.length - 1 ? "border-b border-[#f0ede6]" : ""
               }`}
             >
