@@ -6,7 +6,7 @@ export default function AboutPage() {
       <header className="border-b border-[#e5e2d9]">
         <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between">
           <Link href="/" className="font-display text-sm tracking-[0.2em] uppercase">PAPER FASHION WALK</Link>
-          <Link href="/register" className="btn-primary !py-2 !px-5 text-xs">Register</Link>
+          <a href="https://forms.gle/szVdWVhLMAos6Bqy7" target="_blank" rel="noopener noreferrer" className="btn-primary !py-2 !px-5 text-xs">Register</a>
         </div>
       </header>
       <main className="max-w-3xl mx-auto px-6 py-20">
